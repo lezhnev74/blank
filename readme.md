@@ -41,7 +41,7 @@ It will check your code upon new commits and outputs errors in the file `.qa-rep
 ## Installation
 - create a new project from this repository: 
     ```
-    composer create-project lezhnev74/blank ./
+    composer create-project --prefer-source --dev lezhnev74/blank ./
     ```
 - install fresh versions of dependencies:
     ```
@@ -64,6 +64,8 @@ It will check your code upon new commits and outputs errors in the file `.qa-rep
     ```
 ### After Installation
 Probably there are manual configuration required after all big parts are complete:
+- initialize git via `git init`
+    - configure quality check on git commit (via a git hook): `./develop composer run init-git-hook`
 - check that `.env` file exists
 - do global replacement of the root namespace from `Blank\` to `MyProject\` (not only in php files, but everywhere).
 - make sure git hook is executable `./.git/gooks/pre-commit`

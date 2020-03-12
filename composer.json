@@ -29,7 +29,9 @@
   "minimum-stability": "stable",
   "scripts": {
     "post-root-package-install": [
-      "cp .env.example .env",
+      "cp .env.example .env"
+    ],
+    "init-git-hook": [
       "ln -s -f ../../.githooks/pre-commit .git/hooks/pre-commit",
       "chmod +x .git/hooks/pre-commit"
     ]
