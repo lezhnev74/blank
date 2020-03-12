@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+        bootstrap="src/Infrastructure/boot.php"
+        colors="true"
+        verbose="true"
+        stopOnFailure="true"
+>
+
+    <testsuites>
+        <testsuite name="all">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="SQLITE_FILE" value=":memory:"/>
+    </php>
+</phpunit>

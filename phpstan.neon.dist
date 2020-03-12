@@ -1,0 +1,10 @@
+includes:
+parameters:
+    level: 0
+    paths:
+        - src
+        - tests
+    excludes_analyse:
+        - src/Infrastructure/HTTP/routes.php
+    autoload_files:
+    - "src/Infrastructure/global.php"
