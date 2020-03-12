@@ -5,7 +5,7 @@ It is designed in 3-layers: Application, Domain and Infrastructure. It includes,
 The idea of this project is to be free in choices of packages. No big framework included, only some popular open-source packages, each of them can be replaced or deinstalled.
 This is my comfortable default setup that I feel good about.
 
-## Docker 
+## Docker And `./develop` Tool
 This project requires Docker installed, it ships with a `docker-compose.yml` configured. You can tweak it as you need,
 by default it comes with PHP 7.4 image.
 `./develop` is a proxy tool to pass command inside of the container (via `docker-compose`). Look inside, it supports a number of useful commands:

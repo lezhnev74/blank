@@ -26,6 +26,7 @@
       "Blank\\Application\\": "src/Application"
     }
   },
+  "minimum-stability": "stable",
   "scripts": {
     "post-root-package-install": [
       "cp .env.example .env",
