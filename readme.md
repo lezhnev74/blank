@@ -49,11 +49,11 @@ It will check your code upon new commits and outputs errors in the file `.qa-rep
     php-di/php-di \
     phlak/config vlucas/phpdotenv \
     monolog/monolog \
-    nesbot/carbon \    
-    doctrine/dbal doctrine/migrations 
+    nesbot/carbon \
+    doctrine/dbal doctrine/migrations \
     slim/psr7 slim/slim \
     danielstjules/stringy voku/arrayy ramsey/uuid \
-    webmozart/assert \
+    webmozart/assert
     ```
     ```
     ./develop composer require --dev \
@@ -66,9 +66,9 @@ It will check your code upon new commits and outputs errors in the file `.qa-rep
 Probably there are manual configuration required after all big parts are complete:
 - initialize git via `git init`
     - configure quality check on git commit (via a git hook): `./develop composer run init-git-hook`
+    - run and make sure git hook is executable `./.git/gooks/pre-commit`
 - check that `.env` file exists
 - do global replacement of the root namespace from `Blank\` to `MyProject\` (not only in php files, but everywhere).
-- make sure git hook is executable `./.git/gooks/pre-commit`
 - run `./develop php -v` and `./develop test` to confirm PHP container is runnable
 
 ## Database And Migrations
