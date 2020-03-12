@@ -6,3 +6,4 @@ storage/db.sqlite
 storage/log.log
 .qa-report.txt
 notes
+composer.lock

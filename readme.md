@@ -41,7 +41,7 @@ It will check your code upon new commits and outputs errors in the file `.qa-rep
 ## Installation
 - create a new project from this repository: 
     ```
-    composer create-project --prefer-source --dev lezhnev74/blank ./
+    composer create-project --prefer-source lezhnev74/blank ./
     ```
 - install fresh versions of dependencies:
     ```
