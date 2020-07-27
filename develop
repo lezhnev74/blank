@@ -58,6 +58,14 @@ if [ $# -gt 0 ];then
             app \
             php "$@"
 
+    # run static analyzer
+    elif [ "$1" == "static_analyzer" ]; then
+        shift 1
+        $COMPOSE run --rm \
+            -w /var/www \
+            app \
+            ./vendor/bin/phpstan analyse "$@"
+
     # Call Doctrine migrations tool
     elif [ "$1" == "migrate" ]; then
         shift 1
